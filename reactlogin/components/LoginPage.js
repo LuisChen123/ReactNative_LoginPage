@@ -1,41 +1,51 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image, KeyboardAvoidingView } from 'react-native';
+import LoginForm from './LoginForm';
 
 class LoginPage extends Component {
     render() {
         return (
-            <View style={styles.wrapper}>
-                <View style={styles.titleWrapper}>
-                <Text style={styles.title}>AnyWay</Text>
+            <KeyboardAvoidingView behavior="padding" style={styles.container}>
+                <View style={styles.logoContainer}>
+                {/* <Text style={styles.title}>AnyWay</Text> */}
+                    <Image
+                        style={styles.logo}
+                        source={require('../source/Image/anyway.png')}
+                    />
+                    <Text style={styles.title}> This is Text</Text>
+                </View>
+                <View style={styles.formContainer}>
+                    <LoginForm />
                 </View>
                 <View>
                 <Text style={styles.subtitle}>Power by React Native</Text>
                 </View>
-            </View>
+            </KeyboardAvoidingView>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    wrapper: {
+    container: {
         backgroundColor: '#27ae60',
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+        flex: 1
+    },
+    logoContainer: {
+        alignItems: 'center',
+        flexGrow: 1,
+        justifyContent: 'center'
+    },
+    logo: {
+        width: 100,
+        height: 100
     },
     title: {
-        color: 'white',
-        fontSize: 35,
-        fontWeight: 'bold'
-    },
-    // subtitle: {
-    //     color: 'white',
-    //     fontWeight: 300,
-    //     paddingBottom: 20
-    // },
-    titleWrapper: {
-        justifyContent: 'center',
-        flex: 1
+        color: '#FFF',
+        marginTop: 10,
+        width: 160,
+        textAlign: 'center',
+        opacity: 0.8
+
     }
 
 });
