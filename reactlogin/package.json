@@ -10,7 +10,8 @@
     "react": "16.0.0-alpha.12",
     "react-native": "https://github.com/expo/react-native/archive/sdk-21.0.2.tar.gz",
     "react-native-elements": "^0.17.0",
-    "react-native-keyboard-aware-scroll-view": "^0.3.0"
+    "react-native-keyboard-aware-scroll-view": "^0.3.0",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "eslint-config-rallycoding": "^3.2.0"

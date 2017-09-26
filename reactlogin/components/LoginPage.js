@@ -12,7 +12,7 @@ class LoginPage extends Component {
                         style={styles.logo}
                         source={require('../source/Image/anyway.png')}
                     />
-                    <Text style={styles.title}> This is Text</Text>
+                    <Text style={styles.title}>this is subtitle</Text>
                 </View>
                 <View style={styles.formContainer}>
                     <LoginForm />
@@ -45,7 +45,13 @@ const styles = StyleSheet.create({
         width: 160,
         textAlign: 'center',
         opacity: 0.8
-
+    },
+    subtitle: {
+        padding: 5,
+        backgroundColor: '#DB0A5B',
+        textAlign: 'center',
+        fontStyle: 'italic'
+        
     }
 
 });
