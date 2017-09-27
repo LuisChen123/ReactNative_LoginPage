@@ -9,5 +9,8 @@
 #### Here is the link of Expo, and you also need node to run this. [Expo XDE](https://expo.io/)
 
 1. Open Expo XDE in your pc or mac , also please also search  Expo in you app store or Android Store ,make them both installed in your pc and smart phone
-2. open Expo XDE, click 
-3. Three
+2. open Expo XDE, click Project => open Project => ReactNative_LoginPage => click "reactlogin" then click "Select Folder" => wait
+3. Click Share in the Expo Xde in your pc or mac ,scan QR code by using your Expo app in your smart phone.
+4.done
+
+
